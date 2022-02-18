@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-md-12">
           <b-navbar toggleable="md" class="p-0">
-            <b-navbar-brand href="#">
+            <b-navbar-brand href="#" to="/">
               <img src="/img/logo.png" />
             </b-navbar-brand>
 

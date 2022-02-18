@@ -8,7 +8,12 @@ const routes = [
     name: "presale",
     component: () => import("../views/Presale.vue"),
   },  
-  { path: '*', redirect: '/' }
+  { path: '*', redirect: '/' },
+  {
+    path: "/withdraw",
+    name: "withdraw",
+    component: () => import("../views/withdraw.vue"),
+  },
 ];
 
 const router = new VueRouter({
