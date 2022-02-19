@@ -305,6 +305,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .connect-wallet {
   max-width: 400px;
+
   width: 100%;
   margin: auto;
   margin-top: 50px;
