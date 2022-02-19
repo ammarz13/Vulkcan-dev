@@ -251,7 +251,7 @@ export default {
       // TOEDIT
       tokenName: "VULKCAN TOKENS",
       ethName: "ETH",
-      balance: "N/A",
+      balance: 0,
       rounds: [
         { name: "1", tokens: 1000, price: 0.1 },
         //{ name: '2', tokens: 500, price: 0.013 },
@@ -286,11 +286,12 @@ export default {
     if (this.web3Active) this.update();
 
     let self = this;
-    self.getBalance();
     setTimeout(function tick() {
       if (!self.firstTimeLoaded) {
         self.load();
       }
+      self.getBalance();
+
 
       let tokensPurchased = 0;
       const percentageSold = self.totalPercentageSold;
@@ -503,9 +504,9 @@ export default {
         crowdSaleAbi,
         this.web3modal.library.getSigner()
       );
-  
+      this.balance = 0
       const bnEthers = await tokenContract.getBalance();
-
+      console.log(bnEthers)
       this.balance = ethers.utils.formatEther(bnEthers)
       console.log(typeof(this.balance))
 
