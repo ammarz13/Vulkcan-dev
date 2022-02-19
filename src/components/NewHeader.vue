@@ -27,7 +27,7 @@
               <!-- Right aligned nav items -->
               <div class="d-flex align-items-center">
                 <div v-if="!userAccount">
-                   <b-button variant="outline-primary" size="sm" class="btn-small"
+                   <b-button variant="outline-primary" size="sm" class="btn-small"  @click="gConnect()"
                   >Connect Wallet</b-button>
                 </div>
                 <div v-if="userAccount">

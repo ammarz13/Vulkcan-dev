@@ -20,7 +20,6 @@
             <button
               class="btn btn-primary btn-lg mt-3 px-5"
               @click="withdraw()"
-              :disabled="!buyAmountValid"
             >
              Withdraw Ethers
             </button>
