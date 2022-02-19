@@ -16,7 +16,7 @@
               <b-navbar-nav>
                 <b-nav-item href="#">Home</b-nav-item>
                 <b-nav-item href="#" class="active">Buy</b-nav-item>
-                <b-nav-item href="#">Info</b-nav-item>
+                <b-nav-item to="/withdraw">Withdraw</b-nav-item>
                 <b-nav-item
                   href="https://www.metarun.game/tokenomics"
                   target="_blank"
@@ -27,12 +27,24 @@
               <!-- Right aligned nav items -->
               <div class="d-flex align-items-center">
                 <div v-if="!userAccount">
-                   <b-button variant="outline-primary" size="sm" class="btn-small"  @click="gConnect()"
-                  >Connect Wallet</b-button>
+                  <b-button
+                    variant="outline-primary"
+                    size="sm"
+                    class="btn-small"
+                    @click="gConnect()"
+                    >Connect Wallet</b-button
+                  >
                 </div>
                 <div v-if="userAccount">
-                   <b-button variant="outline-primary" size="sm" class="btn-small"
-                  >Connected: <span class="text-truncate"> {{userAccount}}</span></b-button>
+                  <b-button
+                    variant="outline-primary"
+                    size="sm"
+                    class="btn-small"
+                    >Connected:
+                    <span class="text-truncate">
+                      {{ userAccount }}</span
+                    ></b-button
+                  >
                 </div>
 
                 <b-nav-item-dropdown right>
@@ -76,12 +88,12 @@ header {
 }
 
 .text-truncate {
-    max-width: 171px;
-    display: inline-block;
-    vertical-align: bottom;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+  max-width: 171px;
+  display: inline-block;
+  vertical-align: bottom;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .navbar-brand {
   padding: 0;
