@@ -26,9 +26,15 @@
 
               <!-- Right aligned nav items -->
               <div class="d-flex align-items-center">
-                <b-button variant="outline-primary" size="sm" class="btn-small"
-                  >Connect Wallet</b-button
-                >
+                <div v-if="!userAccount">
+                   <b-button variant="outline-primary" size="sm" class="btn-small"
+                  >Connect Wallet</b-button>
+                </div>
+                <div v-if="userAccount">
+                   <b-button variant="outline-primary" size="sm" class="btn-small"
+                  >Connected: <span class="text-truncate"> {{userAccount}}</span></b-button>
+                </div>
+
                 <b-nav-item-dropdown right>
                   <b-dropdown-item href="#"> Request feature</b-dropdown-item>
                   <b-dropdown-item href="#">F.A.Q</b-dropdown-item>
@@ -67,6 +73,15 @@ header {
   padding: 14px 0;
   border-bottom: 1px solid #e6e8ec;
   margin: 0px 40px;
+}
+
+.text-truncate {
+    max-width: 171px;
+    display: inline-block;
+    vertical-align: bottom;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .navbar-brand {
   padding: 0;

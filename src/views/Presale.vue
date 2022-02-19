@@ -385,7 +385,7 @@ export default {
       tokenAddress:
         CHAIN === MAIN_CHAIN
           ? "0x006De966CaB09404D0b6983963536AE8e378FAC9"
-          : "0xF4dC72ad1A008c907Bd2a296b28c284211bc6b8A", // ETH : FTM
+          : "0x048d2e03D81CBa703f396E5bb69002cfd0ddc228", // ETH : FTM
       tokenContract: null,
       tokenDecimals: 18,
       // TOEDIT
