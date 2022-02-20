@@ -122,6 +122,9 @@ header {
     font-size: 20px;
     font-weight: bold;
     margin-left: 32px;
+    @media screen and (max-width: 991px) {
+      margin-left: 25px;
+    }
   }
 }
 .btn-small {
