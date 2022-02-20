@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-md-12">
           <b-navbar toggleable="md" class="p-0">
-            <b-navbar-brand href="#" to="/">
+            <b-navbar-brand to="/">
               <img src="/img/logo.png" />
             </b-navbar-brand>
 
@@ -14,9 +14,13 @@
 
             <b-collapse id="nav-collapse" is-nav>
               <b-navbar-nav>
-                <b-nav-item href="#">Home</b-nav-item>
-                <b-nav-item href="#" class="active">Buy</b-nav-item>
-                <b-nav-item to="/withdraw">Withdraw</b-nav-item>
+                <b-nav-item to="/" router-link-active class="home-disactive"
+                  >Home</b-nav-item
+                >
+                <b-nav-item to="/" router-link-active>Buy</b-nav-item>
+                <b-nav-item to="/withdraw" router-link-active
+                  >Withdraw</b-nav-item
+                >
                 <b-nav-item
                   href="https://www.metarun.game/tokenomics"
                   target="_blank"

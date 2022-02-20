@@ -34,6 +34,14 @@
         color: #f4f5f6 !important;
       }
     }
+    .nav-item .router-link-exact-active {
+      color: #f4f5f6 !important;
+    }
+    .home-disactive {
+      .router-link-exact-active {
+        color: #b1b5c3 !important;
+      }
+    }
     .nav-link {
       color: #b1b5c3 !important;
     }
