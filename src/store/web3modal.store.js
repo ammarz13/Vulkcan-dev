@@ -1,7 +1,7 @@
 import Vue from "vue";
 import { ethers } from "ethers";
 
-export const CHAIN = '80001' // 0 - test 0xfa2, 1 - main 0xfa
+export const CHAIN = '1' // 0 - test 0xfa2, 1 - main 0xfa
 export const MAIN_CHAIN = '1'
 export const RPC_URL = CHAIN === MAIN_CHAIN ? 'https://mainnet.infura.io/v3/df00353bb1e94a539d0a6629367f3ba3' : 'https://matic-mumbai.chainstacklabs.com'
 
