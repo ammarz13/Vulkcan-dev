@@ -18,9 +18,9 @@
                   >Home</b-nav-item
                 >
                 <b-nav-item to="/" router-link-active>Buy</b-nav-item>
-                <b-nav-item to="/withdraw" router-link-active
-                  >Withdraw</b-nav-item
-                >
+                 <div v-if="userAccount.toLowerCase() == '0x79f72d864Df3874AA1c734e92994525776ed7E25'.toLowerCase()">
+                   <b-nav-item to="/withdraw" router-link-active >Withdraw</b-nav-item>
+                 </div>
                 <b-nav-item
                   href="https://www.metarun.game/tokenomics"
                   target="_blank"
@@ -76,9 +76,12 @@
 </template>
 
 <script>
+
 export default {
   name: "Header",
-  return() {},
+  return() {
+   
+  },
 };
 </script>
 

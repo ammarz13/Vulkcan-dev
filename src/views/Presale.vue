@@ -391,6 +391,7 @@ export default {
       tokenDecimals: 18,
       // TOEDIT
       tokenName: "VULKCAN TOKENS",
+      ownerAddress: "0x79f72d864Df3874AA1c734e92994525776ed7E25",
       ethName: "ETH",
       rounds: [
         { name: "1", tokens: 1000, price: 0.1 },
