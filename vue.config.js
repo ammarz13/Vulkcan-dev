@@ -3,7 +3,7 @@ const path = require('path')
 
 const app = {
   // TOEDIT title
-  title: 'Victoria-VR Presale',
+  title: 'LENS PROTOCOL',
   // TOEDIT mobile theme color
   themeColor: '#000000;'  
 }

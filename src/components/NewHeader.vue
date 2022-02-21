@@ -5,7 +5,7 @@
         <div class="col-md-12">
           <b-navbar toggleable="md" class="p-0">
             <b-navbar-brand to="/">
-              <img src="/img/logo.png" />
+              <img src="/img/lens-logo.svg" />
             </b-navbar-brand>
 
             <b-navbar-toggle target="nav-collapse">
@@ -56,12 +56,12 @@
                   <b-dropdown-item href="#">F.A.Q</b-dropdown-item>
                   <hr class="dropdown-divider" />
                   <b-dropdown-item
-                    href="https://discord.com/invite/metarungame"
+                    href="https://discord.com/invite/lensprotocol"
                     target="_blank"
                     >Discord</b-dropdown-item
                   >
                   <b-dropdown-item
-                    href="https://twitter.com/MetarunGame"
+                    href="https://twitter.com/LensProtocol"
                     target="_blank"
                     >Twitter</b-dropdown-item
                   >
